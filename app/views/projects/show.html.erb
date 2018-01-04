@@ -7,15 +7,14 @@
   <div id="content">
 
     <%= markdown @project.description%>
+    <%= markdown @project.link %>
+    <%= @project.time_period %>
 
   </div>
 
 </div>
 
-<%= @project.title %> <br> <br>
-<%= markdown @project.description %> <br> <br>
-<%= @project.link %><br> <br>
-<%= @project.time_period %>
+
 <br>
 <br>
 
