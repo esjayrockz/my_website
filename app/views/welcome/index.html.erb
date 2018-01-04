@@ -24,7 +24,7 @@
     <h2>Projects</h2>
     <hr>
     <% @projects.each do |project| %>
-    <h3><a href="#"><%= link_to project.title, project%></a></h3>
+    <h3><%= link_to project.title, project%></h3>
     <p class="date"> <%= project.time_period %></p>
     <% end %>
   </div>
