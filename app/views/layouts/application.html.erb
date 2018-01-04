@@ -14,7 +14,7 @@
 
   <body>
     <header id="main_navigation" class ="clearfix">
-      <a href="http://suvajit.com" class ="name">Suvajit Chakrabarty</a>
+      <%= link_to "Suvajit Chakrabarty", root_path, class: "name" %>
       <nav>
         <a href="#">Professional Experience</a>
         <%= link_to "Projects", projects_path %>
@@ -23,5 +23,14 @@
       </nav>
     </header>
     <%= yield %>
+    <footer id="main_footer">
+      <p class="copyright">&copy;2017 Suvajit Chakrabarty</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/suvajit-chakrabarty/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/esjayrockz" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/esjayrockz" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+    </nav>
+
+    </footer>
   </body>
 </html>

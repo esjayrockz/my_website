@@ -1,0 +1,31 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>I'm a software engineer currently pursuing a master's degree
+     in Computer Science at UNC Charlotte.</p>
+    <p>I have 3 years of work experience as a Quality Analyst in ETL and
+      Datwarehousing Projects while working for Cognizant. I have worked for multiple clients
+      like Fossil, Kantar, Realogy, Lululemon, 7-Eleven and Sodexo.</p>
+    <p>I am currently seeking Winter Co-op and Summer Internship opportunities in
+      Software Development or ETL/Datawarehousing roles.</p>
+  </div>
+  <div class="col-2 homepage_content">
+  <h2>Work Experience</h2>
+  <hr>
+  <h3>Quality Analyst in ETL and Data Migration Project for Kantar, UK based Client</h3>
+  <p class="date"> Friday April 10th</p>
+  <h3>Quality Analyst in Data Migration and Reporting Project for Fossil, USA based Client</h3>
+  <p class="date"> Friday April 10th</p>
+  <h3>Quality Analyst in Cubes and ETL Project for Realogy, USA based Client.</h3>
+  <p class="date"> Friday April 10th</p>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Projects</h2>
+    <hr>
+    <% @projects.each do |project| %>
+    <h3><a href="#"><%= link_to project.title, project%></a></h3>
+    <p class="date"> <%= project.time_period %></p>
+    <% end %>
+  </div>
+</div>

@@ -1,6 +1,21 @@
-<%= @project.title %> <br>
+<div id="post_show_content" class="skinny_wrapper wrapper_padding">
+  <header>
+    <p class="date"><%=@project.created_at.strftime('%A, %B %d')%></p>
+    <h1><%=@project.title%></h1>
+    <hr>
+  </header>
+  <div id="content">
+
+    <%=@project.description%>
+
+  </div>
+
+</div>
+
+<%= @project.title %> <br> <br>
 <%= @project.description %> <br> <br>
-<%= @project.link %>
+<%= @project.link %><br> <br>
+<%= @project.time_period %>
 <br>
 <br>
 

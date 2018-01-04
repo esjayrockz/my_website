@@ -42,7 +42,7 @@ end
   private
 
   def project_params
-    params.require(:project).permit(:title, :description, :link)
+    params.require(:project).permit(:title, :description, :link, :time_period)
   end
 
   def find_project
