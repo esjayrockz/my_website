@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 before_action :find_project, only: [:show, :edit, :update, :destroy]
 
   def index
+    @projects = Project.all.limit(4).order("created_at")
   end
 
   def new
