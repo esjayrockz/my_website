@@ -1,0 +1,3 @@
+class WorkExperienceController < ApplicationController
+  
+end
